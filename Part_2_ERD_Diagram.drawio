@@ -1,0 +1,58 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.3.6 Chrome/140.0.7339.249 Electron/38.8.0 Safari/537.36" version="29.3.6">
+  <diagram name="Page-1" id="TNEDwxd5aHtQfVGtvBlu">
+    <mxGraphModel dx="854" dy="618" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="n3bGHFfuXaqldELicMdf-2" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" value="Musician" vertex="1">
+          <mxGeometry height="150" width="160" x="345" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="n3bGHFfuXaqldELicMdf-3" parent="n3bGHFfuXaqldELicMdf-2" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;whiteSpace=wrap;" value="+musician_id&lt;br&gt;+name&lt;br&gt;+street&lt;div&gt;+city&lt;/div&gt;&lt;div&gt;+phone&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="160" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="n3bGHFfuXaqldELicMdf-4" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" value="&lt;strong data-start=&quot;3703&quot; data-end=&quot;3717&quot;&gt;Instrument&lt;/strong&gt;" vertex="1">
+          <mxGeometry height="150" width="160" x="610" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="n3bGHFfuXaqldELicMdf-5" parent="n3bGHFfuXaqldELicMdf-4" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;whiteSpace=wrap;" value="+instrument_name&lt;div&gt;+musical_key&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="160" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="n3bGHFfuXaqldELicMdf-6" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" value="&lt;strong data-start=&quot;3753&quot; data-end=&quot;3762&quot;&gt;Album&lt;/strong&gt;" vertex="1">
+          <mxGeometry height="150" width="160" x="345" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="n3bGHFfuXaqldELicMdf-7" parent="n3bGHFfuXaqldELicMdf-6" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;whiteSpace=wrap;" value="+album_id&lt;div&gt;+title&lt;br&gt;&lt;/div&gt;&lt;div&gt;+copyright_date&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="160" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="n3bGHFfuXaqldELicMdf-8" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" value="&lt;strong data-start=&quot;3703&quot; data-end=&quot;3717&quot;&gt;Song&lt;/strong&gt;" vertex="1">
+          <mxGeometry height="150" width="160" x="50" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="n3bGHFfuXaqldELicMdf-9" parent="n3bGHFfuXaqldELicMdf-8" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;whiteSpace=wrap;" value="+song_id&lt;div&gt;+title&lt;br&gt;&lt;/div&gt;&lt;div&gt;+author&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="160" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="n3bGHFfuXaqldELicMdf-10" edge="1" parent="1" source="n3bGHFfuXaqldELicMdf-3" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;startArrow=ERoneToMany;rounded=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" target="n3bGHFfuXaqldELicMdf-5" value="">
+          <mxGeometry height="100" relative="1" width="100" as="geometry">
+            <mxPoint x="320" y="330" as="sourcePoint" />
+            <mxPoint x="420" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n3bGHFfuXaqldELicMdf-11" edge="1" parent="1" source="n3bGHFfuXaqldELicMdf-7" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" target="n3bGHFfuXaqldELicMdf-9" value="">
+          <mxGeometry height="100" relative="1" width="100" as="geometry">
+            <mxPoint x="320" y="330" as="sourcePoint" />
+            <mxPoint x="420" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n3bGHFfuXaqldELicMdf-12" edge="1" parent="1" source="n3bGHFfuXaqldELicMdf-8" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERmany;startArrow=ERmany;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=1;entryDx=0;entryDy=0;" target="n3bGHFfuXaqldELicMdf-3" value="">
+          <mxGeometry height="100" relative="1" width="100" as="geometry">
+            <mxPoint x="320" y="330" as="sourcePoint" />
+            <mxPoint x="420" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n3bGHFfuXaqldELicMdf-13" edge="1" parent="1" source="n3bGHFfuXaqldELicMdf-3" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="n3bGHFfuXaqldELicMdf-6" value="">
+          <mxGeometry height="100" relative="1" width="100" as="geometry">
+            <mxPoint x="320" y="330" as="sourcePoint" />
+            <mxPoint x="420" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
